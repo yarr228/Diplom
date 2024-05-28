@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+nav, footer, header, aside {
+  display: block;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+body {
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    background-image: url(/images/didzhej_poza_pult_982208_3840x2160.jpg);
+    background-repeat: no-repeat; /* Предотвращает повторение фоновой картинки */
+    background-size: cover; /* Масштабирует фоновую картинку так, чтобы она полностью покрывала фон */
+    background-attachment: fixed; /* Фиксирует фоновое изображение */
+    height: 100%;
+    font-size: 20px;
+}
+
+.dropdown-toggle {
+  font-size: 40px;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+  padding: 10px 20px;
+  box-shadow: 0 10px 10px black 1;
+  border-radius: 10px;
+  width: 300px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+}
+.dropdown-menu.show {
+  z-index: 99;
+  visibility: visible;
+  opacity: 1;
+  top: calc(100% + 10px);
+  transition: all 0.3s ease-out;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  opacity: 0.7;
+}
+
+.dropdown-menu a:hover {
+  opacity: 1;
+}
+
+.finder {
+  display: flex; /* Добавляем гибкое отображение */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 8px 10px;
+  border: 2px solid white;
+  border-radius: 20px;  
+}
+
+.finder input {
+  width: 400px;
+  color: white;
+  margin: 0 0 0 10px;
+  background: transparent;
+}
+
+.user_header_menu {
+  margin: auto 0;
+}
+
+.user-toggle {
+  background-color: transparent;
+}
+
+.user {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu {
+  text-align: right;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 400px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 100%; /* Положение сверху будет относительно родительского блока .user-container */
+  left: -320px; /* Сдвигаем меню влево */
+}
+.user-menu.show {
+  z-index: 99;
+  visibility: visible;
+  opacity: 1;
+  top: calc(100% + 10px);
+  transition: all 0.3s ease-out;
+  left: -320px; /* Сдвигаем меню влево */
+}
+.user-menu a {
+  color: white;
+  display: block;
+  padding: 10px 0;
+  opacity: 0.7;
+}
+
+.user-menu a:hover {
+  opacity: 1;
+}
+
+.user-menu span {
+  color: white;
+  display: block;
+  padding: 10px 0;
+  opacity: 1;
+}
+
+.header_container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+
+
+.main_container {
+
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.main_row_container {
+
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.albums {
+    margin: 0 40px 20px 0;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    vertical-align: top; /* Выровнять по верхнему краю, чтобы добавился отступ сверху */
+    padding: 60px 120px;
+    border-radius: 10px;
+
+}
+
+.albums:last-child {
+    margin: 0px;
+    
+}
+
+.albums img {
+    border-radius: 10px;
+    width: 200px;
+    margin: 0 0 10px 0;
+
+}
+
+.albums:hover {
+
+    transform: scale(1.1); /* Увеличиваем блок при наведении */
+    transition: 0.3s;
+}
+
+.albums button {
+  overflow: hidden; /* Скрытие всех внутренних элементов, выходящих за пределы кнопки */
+  border: none; /* Удаление границы кнопки */
+  padding: 0; /* Удаление внутренних отступов */
+  margin: 0; /* Удаление внешних отступов */
+  background: none; /* Удаление фона кнопки */
+} 

@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+nav, footer, header, aside {
+  display: block;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  font-family: "Comfortaa", sans-serif;
+  background-image: url(/images/didzhej_poza_pult_982208_3840x2160.jpg);
+  background-repeat: no-repeat; /* Предотвращает повторение фоновой картинки */
+  background-size: cover; /* Масштабирует фоновую картинку так, чтобы она полностью покрывала фон */
+  font-size: 20px;
+
+}
+
+
+.dropdown-toggle {
+  font-size: 40px;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+  padding: 10px 20px;
+  box-shadow: 0 10px 10px black 1;
+  border-radius: 10px;
+  width: 300px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+}
+.dropdown-menu.show {
+  z-index: 99;
+  visibility: visible;
+  opacity: 1;
+  top: calc(100% + 10px);
+  transition: all 0.3s ease-out;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  opacity: 0.7;
+}
+
+.dropdown-menu a:hover {
+  opacity: 1;
+}
+
+.finder {
+  display: flex; /* Добавляем гибкое отображение */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding: 8px 10px;
+  border: 2px solid white;
+  border-radius: 20px;  
+}
+
+.finder input {
+  width: 400px;
+  color: white;
+  margin: 0 0 0 10px;
+  background: transparent;
+}
+
+.user_header_menu {
+  margin: auto 0;
+}
+
+.user-toggle {
+  background-color: transparent;
+}
+
+.user {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu {
+  text-align: right;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 400px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 100%; /* Положение сверху будет относительно родительского блока .user-container */
+  left: -320px; /* Сдвигаем меню влево */
+}
+.user-menu.show {
+  z-index: 99;
+  visibility: visible;
+  opacity: 1;
+  top: calc(100% + 10px);
+  transition: all 0.3s ease-out;
+  left: -320px; /* Сдвигаем меню влево */
+}
+.user-menu a {
+  color: white;
+  display: block;
+  padding: 10px 0;
+  opacity: 0.7;
+}
+
+.user-menu a:hover {
+  opacity: 1;
+}
+
+.user-menu span {
+  color: white;
+  display: block;
+  padding: 10px 0;
+  opacity: 1;
+}
+
+
+
+.header_container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+#scroll-left {
+  left: -80px;
+}
+
+#scroll-right {
+  right: -80px;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+.main_container {
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.main_row_container {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+.column_container {
+  display: flex;
+}
+
+.music_track {
+  margin: 0 0 0 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(180, 180, 180);
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  max-width: 430px;
+  max-height: 300px;
+}
+
+.music_track:first-child {
+  margin: 0px;
+}
+
+.column_container img {
+  border-radius: 10px;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 0 10px 0;
+}

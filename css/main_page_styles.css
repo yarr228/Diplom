@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+nav, footer, header, aside {
+  display: block;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+body {
+
+    color: white;
+    font-size: 30px;
+    font-family: "Comfortaa", sans-serif;
+    background-image: url(/images/didzhej_poza_pult_982208_3840x2160.jpg);
+    background-repeat: no-repeat; /* Предотвращает повторение фоновой картинки */
+    background-size: cover; /* Масштабирует фоновую картинку так, чтобы она полностью покрывала фон */
+    overflow-y: hidden; /* Запретить вертикальную прокрутку */
+}
+a {
+
+    color: white;
+}
+.main_register_container {
+    
+    color: white;
+    border: 2px solid rgb(180, 180, 180);
+    background-color: rgba(0, 0, 0, 0.4); /* Прозрачный цвет с прозрачностью 40% */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    max-width: 1000px;
+    padding: 20px 0 60px 0;
+    margin: 100px auto 0;
+}
+
+.main_register_text {
+
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(180, 180, 180);
+    margin: 100px 0 0 100px;
+}
+.pole_registracii_buttons_container{
+
+    margin: 100px 0 0 0;
+    display: flex;
+}
+
+.pole_registracii_buttons_container button {
+    transition: transform 0.3s ease; /* Добавляем плавный переход */
+    background-color: transparent;
+    padding: 20px 10px;
+    flex: 1;
+    font-size: 26px;
+    color: white;
+}
+
+.pole_registracii_buttons_container a {
+  transition: transform 0.3s ease; /* Добавляем плавный переход */
+  background-color: transparent;
+  padding: 20px 10px;
+  flex: 1;
+  font-size: 26px;
+  color: white;
+}
+
+.pole_registracii_buttons_container a:hover {
+  transform: scale(1.1); /* Увеличиваем блок при наведении */
+}
+
+
+.pole_registracii_buttons_container button:hover {
+    transform: scale(1.1); /* Увеличиваем блок при наведении */
+}
+
+
+.pole_registracii_buttons_container button:first-child {
+    background: rgb(201,177,245);
+    background: linear-gradient(90deg, rgba(201,177,245,1) 0%, rgba(87,75,120,1) 54%, rgba(50,47,52,1) 100%);    
+    border-radius: 10px;
+}
+
+.main_register_image {
+
+  margin: 0 100px 0 0;
+}
+
+.main_register_image img {
+
+  border-radius: 10px;
+}
+
+input {
+
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px 6px;
+}
+
+.login_vvod {
+    margin: 0 0 4px 0;
+
+
+}
+.pass_vvod {
+
+    margin: 20px 0 4px 0;
+}
